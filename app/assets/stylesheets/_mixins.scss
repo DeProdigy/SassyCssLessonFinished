@@ -1,7 +1,7 @@
-@mixin round-corners($border-color, $border-size, $border-style) {
+@mixin round-corners($border-color, $border-radius, $border-size, $border-style) {
   border-bottom-color: $border-color;
-  border-bottom-left-radius: $border-size;
-  border-bottom-right-radius: $border-size;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
   border-bottom-style: $border-style;
   border-bottom-width: $border-size;
   border-left-color: $border-color;
@@ -11,8 +11,8 @@
   border-right-style: $border-style;
   border-right-width: $border-size;
   border-top-color: $border-color;
-  border-top-left-radius: $border-size;
-  border-top-right-radius: $border-size;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   border-top-style: $border-style;
   border-top-width: $border-size;
 }

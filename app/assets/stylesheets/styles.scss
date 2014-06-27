@@ -1,17 +1,20 @@
 @import 'mixins';
 @import 'fonts';
 
-$tint: 0.50;
+$tint: 0.60;
 $box-height: 300px;
 $box-width: 600px;
 
 body{
   font-family: 'Raleway', sans-serif;
   color: RGBA(236, 240, 241, 1);
+  // background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  // background: linear-gradient(to bottom right, red , blue);
   background:
     linear-gradient(
+      to left,
       RGBA(26, 188, 156, $tint),
-      RGBA(26, 188, 156, $tint)
+      RGBA(52, 73, 94, $tint + 0.2)
     ),
     url('https://s3.amazonaws.com/snapwire/images/home/52e457824162277214678bd1.jpg');
   background-size: cover;
@@ -25,21 +28,22 @@ body{
   left: 50%;
   margin-top: -($box-height / 2);
   margin-left: -($box-width / 2);
-  background: RGBA(211, 65, 44, 0.8);
+  background: RGBA(211, 65, 44, 0.75);
   text-align: center;
-  @include round-corners(white, 3px, solid);
+  @include round-corners(#ECF0F1, 10px, 2px, solid);
 }
 
 input {
   font-size: 12px;
   background: RGBA(236, 240, 241, 0.6);
-  @include round-corners(white, 3px, solid);
+  @include round-corners(#ECF0F1, 20px, 2px, solid);
   &:focus {
     outline: 0;
   }
 }
 
 input[type='email'] {
+  padding-left: 10px;
   height: $box-height / 10;
   width: $box-width / 2;
 }
