@@ -27,7 +27,7 @@ body{
   left: 50%;
   margin-top: -($box-height / 2);
   margin-left: -($box-width / 2);
-  background: RGBA(211, 65, 44, 0.75);
+  background: RGBA(211, 65, 44, $tint + 0.15);
   text-align: center;
   @include round-corners(#ECF0F1, 10px, 2px, solid);
 }
@@ -35,7 +35,7 @@ body{
 input {
   margin-top: 20px;
   font-size: 12px;
-  background: RGBA(236, 240, 241, 0.6);
+  background: RGBA(236, 240, 241, $tint);
   @include round-corners(#ECF0F1, 20px, 2px, solid);
   &:focus {
     outline: 0;
