@@ -19,6 +19,7 @@ body{
 }
 
 .box{
+  padding: 20px 10px 0px 10px;
   height: $box-height;
   width: $box-width;
   position: absolute;
@@ -32,6 +33,7 @@ body{
 }
 
 input {
+  margin-top: 20px;
   font-size: 12px;
   background: RGBA(236, 240, 241, 0.6);
   @include round-corners(#ECF0F1, 20px, 2px, solid);
@@ -51,6 +53,7 @@ input[type='submit'] {
   top: -1px;
   height: $box-height / 8;
   width: $box-width / 8;
+
 }
 
 
